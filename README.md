@@ -2,7 +2,7 @@ This is a new [**React Native**](https://reactnative.dev) project, bootstrapped 
 
 # Getting Started
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+> **Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
 
 ## Step 1: Start the Metro Server
 
@@ -77,3 +77,27 @@ To learn more about React Native, take a look at the following resources:
 - [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
 - [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
 - [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+
+// Features
+
+Do Left swipe to delete and right swipe to pin News .
+
+- **Handling Exhaustion of Headlines:**
+
+  - When all headlines from the current batch have been displayed, reset the local storage.
+  - Fetch the next batch of headlines and populate the list view.
+
+- **User Interaction:**
+
+  - Allow users to swipe a headline to delete it or pin it to the top of the view.
+
+  - A pinned headline should stay in view when the list updates, whether manually or
+    automatically.
+
+  - Deleting a headline should remove it from view, with the next headline appearing at the top of the list.
+
+- **Rendering News Pages in a Web View:**
+
+  - When a user selects a news headline, the detailed view should render the full news article using a web view.
+
+  - Ensure the web view is integrated smoothly and provides a seamless reading experience, with appropriate scaling and navigation options for the user.
